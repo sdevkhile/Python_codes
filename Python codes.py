@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
-
 #  To check if there are exactly 3 characters between 'a'/'A' and 'b'/'B' or vice versa. 
 
 def abcheck(txt):
@@ -15,8 +9,6 @@ def abcheck(txt):
             return True
     print('not found')   
 
-
-# In[27]:
 
 
 # To count the number of x's and o's in a string:
@@ -32,7 +24,6 @@ def xo(txt):
     print('xcount is {}\nocount is {}'.format(xcount,ocount))
 
 
-# In[ ]:
 
 
 # Function to find if the given list of numbers follows arithmetic or geometric progression.
@@ -52,10 +43,9 @@ def arithgeo(arr):
     return 'Arithmetic' if arith else 'Geometric' if geo else -1            
 
 
-# In[29]:
 
 
-#  To get the middle 3 characters from a string
+#  Get the middle 3 characters from a string
 
 
 def get_middle_3_chars(x):
@@ -66,8 +56,6 @@ def get_middle_3_chars(x):
     else:
         print('Please give odd number of characters')
 
-
-# In[ ]:
 
 
 #  Remove duplicates from a list 
@@ -86,8 +74,6 @@ def remove(x):
 
 
 
-# In[ ]:
-
 
 # Find a to the power b using Recursion:
 
@@ -99,9 +85,6 @@ def power(num1,num2):
         return num1*power(num1,num2-1)
 
 
-# In[40]:
-
-
 # List comprehension 
 
 # To count number of spaces in a string:-
@@ -110,15 +93,11 @@ string = 'There is a kite flying in the sky'
 print( len( [i for i in string if i == ' '] ) )
 
 
-# In[ ]:
-
 
 # To get a list of all the consonants in a string
 
 print([x for x in string if x not in ('a','e','i','o','u',' ') ] )
 
-
-# In[42]:
 
 
 # To get the index and values from any iterable in the form of list of tuples 
@@ -127,8 +106,6 @@ x = ['Hello', 'Hi', 34 , 56.78,  100, 98,  (1,2,3) ]
 
 print([(index,value) for index, value in enumerate(x)])
 
-
-# In[44]:
 
 
 # Print all the common elements in 2 lists using list comprehension:
@@ -139,7 +116,6 @@ list2 = [3,4,5,6]
 print( [ x for x in list1 if x in list2 ] )
 
 
-# In[46]:
 
 
 # Print only the numbers from a string
@@ -149,31 +125,6 @@ str1= '1984 there were 13 instances of a protest with over 1000 people attending
 print([x for x in str1.split() if x.isnumeric()])
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
