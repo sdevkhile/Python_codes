@@ -1,0 +1,12 @@
+def exor(param):
+    x = param[0]
+    y = param[1]
+    c=''
+    for i in range(len(x)):
+        for j in range(len(y)):
+            if i == j:
+                if x[i] == y[j]:
+                    c = c + '0'
+                else:
+                    c = c + '1'
+    return c               
