@@ -20,6 +20,6 @@ def wordcount(str1):
             max_count=max_value
             result = desired_word
         else:
-            return -1
+            pass
     print(result)        
             
