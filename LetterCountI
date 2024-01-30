@@ -1,0 +1,25 @@
+### Have the function LetterCountI(str) take the str parameter being passed and return the first word with the greatest number of repeated letters. 
+For example: "Today, is the greatest day ever!" should return greatest because it has 2 e's (and 2 t's) and it comes before ever which also has 2 e's. 
+If there are no words with repeating letters return -1. Words will be separated by spaces. ###
+
+def wordcount(str1):
+    x = str1.lower().split()
+    result = None
+    max_count=0
+    for word in x:
+        word_count={}
+        for letter in word:
+            if letter in word_count:
+                word_count[letter]= word_count[letter] +1
+            else:
+                word_count[letter] = 1
+        max_value = max(word_count.values())
+        desired_word = word
+        
+        if max_value> max_count:
+            max_count=max_value
+            result = desired_word
+        else:
+            return -1
+    print(result)        
+            
